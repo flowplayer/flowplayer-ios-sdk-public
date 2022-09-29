@@ -5,9 +5,7 @@ platform :ios, '12.1'
 workspace "FlowplayerExample.xcworkspace"
 
 def pods
-    pod 'Flowplayer', '3.0.2'
-    pod 'Rollbar', '~> 1.12.14'
-    pod 'GoogleAds-IMA-iOS-SDK', '~> 3.14.5'
+    pod 'Flowplayer', '3.0.4'
 end
 
 target 'Example Swift' do

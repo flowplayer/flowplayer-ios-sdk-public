@@ -13,8 +13,10 @@
 		E134A0EF27B3E9D6004895FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E134A0ED27B3E9D6004895FC /* Main.storyboard */; };
 		E134A0F127B3E9D7004895FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E134A0F027B3E9D7004895FC /* Assets.xcassets */; };
 		E134A0F427B3E9D7004895FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E134A0F227B3E9D7004895FC /* LaunchScreen.storyboard */; };
-		E134A10027B3EAB9004895FC /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134A0FF27B3EAB9004895FC /* PlayerViewController.swift */; };
+		E134A10027B3EAB9004895FC /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134A0FF27B3EAB9004895FC /* PlayerController.swift */; };
 		E134A10827B4065A004895FC /* FPConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134A10727B4065A004895FC /* FPConstant.swift */; };
+		E15104B628E6371F009C832C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15104B528E6371F009C832C /* SceneDelegate.swift */; };
+		E15104B828E63761009C832C /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15104B728E63761009C832C /* UIWindow+Extension.swift */; };
 		F3B90AAF34AFCA544771D947 /* Pods_Example_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C86942FEF3E14C19EE12878 /* Pods_Example_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +32,10 @@
 		E134A0F027B3E9D7004895FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E134A0F327B3E9D7004895FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E134A0F527B3E9D7004895FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E134A0FF27B3EAB9004895FC /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		E134A0FF27B3EAB9004895FC /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		E134A10727B4065A004895FC /* FPConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPConstant.swift; sourceTree = "<group>"; };
+		E15104B528E6371F009C832C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E15104B728E63761009C832C /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,8 @@
 				E134A0E727B3E9D6004895FC /* AppDelegate.swift */,
 				E134A0EB27B3E9D6004895FC /* MainController.swift */,
 				E118D1A527B40D2F00B95517 /* MediaItem.swift */,
-				E134A0FF27B3EAB9004895FC /* PlayerViewController.swift */,
+				E134A0FF27B3EAB9004895FC /* PlayerController.swift */,
+				E15104B528E6371F009C832C /* SceneDelegate.swift */,
 				E134A0FC27B3EA1F004895FC /* Assets */,
 				E134A0FE27B3EA2F004895FC /* Config */,
 				E134A0FB27B3EA13004895FC /* Storyboard */,
@@ -118,6 +123,7 @@
 			children = (
 				E134A0F527B3E9D7004895FC /* Info.plist */,
 				E134A10727B4065A004895FC /* FPConstant.swift */,
+				E15104B728E63761009C832C /* UIWindow+Extension.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -238,10 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E134A0EC27B3E9D6004895FC /* MainController.swift in Sources */,
-				E134A10027B3EAB9004895FC /* PlayerViewController.swift in Sources */,
+				E134A10027B3EAB9004895FC /* PlayerController.swift in Sources */,
+				E15104B828E63761009C832C /* UIWindow+Extension.swift in Sources */,
 				E118D1A627B40D2F00B95517 /* MediaItem.swift in Sources */,
 				E134A10827B4065A004895FC /* FPConstant.swift in Sources */,
 				E134A0E827B3E9D6004895FC /* AppDelegate.swift in Sources */,
+				E15104B628E6371F009C832C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
