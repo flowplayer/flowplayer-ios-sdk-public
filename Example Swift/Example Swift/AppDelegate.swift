@@ -30,35 +30,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// This will trigger in iOS 12 or in apps that don't have UISceneDelegate
 	func applicationDidEnterBackground(_ application: UIApplication) {
-		let topController = window?.getTopViewController() as? PlayerController
-
-		savedPlayerInstance = topController?.videoController.avPlayer
-
-		// Only continue if playback was present before
-		guard savedPlayerInstance?.timeControlStatus != .playing else {
-			savedPlayerInstance = nil
-			return
-		}
-
-		// Continue playback in the background
-		topController?.videoController.avPlayer = nil // Disconnect
-
-		// FIXME: Action should be the one that was in enter background
-		self.savedPlayerInstance?.play()
+		//		Uncomment code to enable background playback
+		//		let topController = window?.getTopViewController() as? PlayerController
+		//
+		//		savedPlayerInstance = topController?.videoController.avPlayer
+		//
+		//		// Only continue if playback was present before
+		//		guard savedPlayerInstance?.timeControlStatus != .playing else {
+		//			savedPlayerInstance = nil
+		//			return
+		//		}
+		//
+		//		// Continue playback in the background
+		//		topController?.videoController.avPlayer = nil // Disconnect
+		//		self.savedPlayerInstance?.play()
 	}
 
 	// This will trigger in iOS 12 or in apps that don't have UISceneDelegate
 	func applicationWillEnterForeground(_ application: UIApplication) {
-		guard (savedPlayerInstance != nil) else { return }
-
-		// Continue Foreground playback
-		let topController = window?.getTopViewController() as? PlayerController
-
-		topController?.videoController.avPlayer = self.savedPlayerInstance // Reconnect
-		self.savedPlayerInstance = nil
-
-		// FIXME: Action should be the one that was in enter background
-		topController?.videoController.play()
+		//		Uncomment code to enable background playback
+		//		guard (savedPlayerInstance != nil) else { return }
+		//
+		//		// Continue Foreground playback
+		//		let topController = window?.getTopViewController() as? PlayerController
+		//
+		//		topController?.videoController.avPlayer = self.savedPlayerInstance // Reconnect
+		//		self.savedPlayerInstance = nil
+		//		topController?.videoController.play()
 	}
 
 }

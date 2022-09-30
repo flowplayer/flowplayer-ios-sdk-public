@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>FlowplayerAccessToken</key>
-	<string>YOUR_ACCESS_TOKEN</string>
+	<string>eyJraWQiOiJUVnRJbnM4dG1yR3YiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjIjoie1wiYWNsXCI6NixcImlkXCI6XCJUVnRJbnM4dG1yR3ZcIn0iLCJpc3MiOiJGbG93cGxheWVyIn0.d-3gGyfXK5ESRubXqJBFwUNP-iSSsd_hj8mZ5LnjejThqNxX9RfnQXdBrDj61nZcWCnIHMI-RTFokYMTLooSMw</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -13,10 +13,10 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
 				</dict>
