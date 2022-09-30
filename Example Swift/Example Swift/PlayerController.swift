@@ -13,7 +13,7 @@ class PlayerController: UIViewController  {
 	@IBOutlet weak var mediaLabel: UILabel!
 	
 	// - Views
-	private lazy var videoController = FPFlowplayerViewController()
+	lazy var videoController = FPFlowplayerViewController()
 	
 	// - Props
 	var mediaName: String?
@@ -48,6 +48,11 @@ class PlayerController: UIViewController  {
 		if let externalMedia = media as? FPExternalMedia {
 			videoController.prepare(externalMedia: externalMedia, autoStart: true)
 		}
+	}
+
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(false)
+		videoController.removePlayerDelegate(self)
 	}
 }
 

@@ -16,8 +16,6 @@ class MainController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.tableFooterView = .init()
-		// Required for audio playback on physical devices
-		try! AVAudioSession.sharedInstance().setCategory(.playback)
 	}
 	
 	// - Table DataSource
