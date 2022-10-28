@@ -30,7 +30,7 @@ Use the package manager [CocoaPods](https://cocoapods.org/) to install Flowplaye
 
 ```bash
 # PodFile
-pod 'Flowplayer', '~> 3.0.3'
+pod 'Flowplayer', '~> 3.3.0'
 ```
 
 and the run
