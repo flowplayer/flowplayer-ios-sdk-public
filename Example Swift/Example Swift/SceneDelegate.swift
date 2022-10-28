@@ -21,17 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		//		}
 		//		savedPlayerInstance = topController.videoController.avPlayer
 		//
-		//		// Only continue if playback was present before
-		//		guard savedPlayerInstance?.timeControlStatus != .playing else {
-		//			savedPlayerInstance = nil
-		//			return
-		//		}
-		//
 		//		// Continue playback in the background
 		//		topController.videoController.avPlayer = nil
-		//		topController.videoController.removePlayerDelegate(topController)
-		//
-		//		self.savedPlayerInstance?.play()
 	}
 
 	func sceneWillEnterForeground(_ scene: UIScene) {
@@ -43,9 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		//		}
 		//
 		//		topController.videoController.avPlayer = self.savedPlayerInstance // Reconnect
-		//		topController.videoController.addPlayerDelegate(topController)
 		//		self.savedPlayerInstance = nil
-		//		self.savedPlayerInstance?.play()
 	}
 
 }

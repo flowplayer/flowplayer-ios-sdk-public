@@ -33,8 +33,14 @@ class PlayerController: UIViewController  {
 		// Create and add config
 		let config = createConfig()
 		videoController.setControlConfig(config)
+
+		// Enable this if you support background playback
+		// videoController.enableBackgroundPlayback = true
+
+		// Hide video player controls
+		// videoController.hideControls = true
 		
-		// - Add video player to view
+		// Add video player to view
 		containerView.addSubview(videoController.view)
 
 		// Add the delegate after the flowplayerViewController has been added to the container.

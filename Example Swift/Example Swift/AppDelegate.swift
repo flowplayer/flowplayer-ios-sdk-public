@@ -31,19 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	// This will trigger in iOS 12 or in apps that don't have UISceneDelegate
 	func applicationDidEnterBackground(_ application: UIApplication) {
 		//		Uncomment code to enable background playback
-		//		let topController = window?.getTopViewController() as? PlayerController
+		//      let topController = window?.getTopViewController() as? PlayerController
 		//
-		//		savedPlayerInstance = topController?.videoController.avPlayer
-		//
-		//		// Only continue if playback was present before
-		//		guard savedPlayerInstance?.timeControlStatus != .playing else {
-		//			savedPlayerInstance = nil
-		//			return
-		//		}
+		//      savedPlayerInstance = topController?.videoController.avPlayer
 		//
 		//		// Continue playback in the background
-		//		topController?.videoController.avPlayer = nil // Disconnect
-		//		self.savedPlayerInstance?.play()
+		//      topController?.videoController.avPlayer = nil // Disconnect
 	}
 
 	// This will trigger in iOS 12 or in apps that don't have UISceneDelegate
@@ -56,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		//
 		//		topController?.videoController.avPlayer = self.savedPlayerInstance // Reconnect
 		//		self.savedPlayerInstance = nil
-		//		topController?.videoController.play()
 	}
 
 }

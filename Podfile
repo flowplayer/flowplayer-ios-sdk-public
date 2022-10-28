@@ -5,7 +5,7 @@ platform :ios, '12.1'
 workspace "FlowplayerExample.xcworkspace"
 
 def pods
-    pod 'Flowplayer', '3.0.4'
+    pod 'Flowplayer', '3.3.0'
 end
 
 target 'Example Swift' do
