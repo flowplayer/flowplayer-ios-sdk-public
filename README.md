@@ -1,4 +1,8 @@
-# Introduction
+## Please check out Wowza Flowplayer Apple SDK
+
+This project has been archived and has been moved over to https://github.com/flowplayer/apple-sdk-releases our new and shiny SDK for Apple devices.
+
+## Introduction
 
 The Flowplayer iOS SDK is a native media player, written entirely in Swift and provides an easy-to-use API which enables developers to create beautiful iOS applications that play audio and video
 both locally and over the Internet. The Flowplayer iOS SDK uses AVPlayer as its core and therefore takes advantage of all its powerful features.
